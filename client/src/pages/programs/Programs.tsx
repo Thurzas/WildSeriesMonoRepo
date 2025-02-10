@@ -3,11 +3,11 @@ import styles from "./Programs.module.css";
 const Programs = () => {
   interface Program {
     id: number;
-    title: String;
+    title: string;
     synopsis: string;
     poster: string;
     country: string;
-    year: Number;
+    year: number;
   }
   const data = useLoaderData() as Program[];
   console.info(data);
@@ -55,7 +55,7 @@ const Programs = () => {
             data.map((program: Program) => (
               <div key={program.id} className={styles.movie}>
                 <div className={styles.img}>
-                  <img src={program.poster}></img>
+                  <img alt="affiche de film" src={program.poster} />
                 </div>
                 <h2 className={styles.title}>{program.title}</h2>
                 <p>{program.synopsis}</p>
@@ -67,7 +67,7 @@ const Programs = () => {
             ))
           ) : (
             <div>
-                <p>no movies...</p>
+              <p>no movies...</p>
             </div>
           )}
         </div>
