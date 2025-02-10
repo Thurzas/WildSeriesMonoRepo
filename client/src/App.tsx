@@ -37,10 +37,10 @@ function App() {
 
       <main className="text-box">
         <hgroup className="block-primary">
-          <h2 className="block-primary-main">JS Monorepo</h2>
-          <p className="block-primary-sub">Votre framework JavaScript</p>
+          <h2 className="block-primary-main">Wild Series</h2>
+          <p className="block-primary-sub">Welcome to Wild Series !</p>
         </hgroup>
-        <p>Vous avez lu le README ?</p>
+        <p>...sinon, vous avez lu le README ? 😃</p>
       </main>
 
       <footer>
